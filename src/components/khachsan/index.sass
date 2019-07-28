@@ -1,0 +1,107 @@
+.khachsan
+    background-image: url("/Data/Sites/1/media/khachsan/bg.png")
+    background-position: center bottom
+    background-repeat: no-repeat
+    @media (max-width: 991.98px)
+        background-position: bottom
+        background-size: cover
+    p
+        font-size: 16px
+        color: rgb(51, 51, 51)
+        text-align: center
+        margin-right: 5%
+        margin-left: 5%
+        padding-bottom: 80px
+        @media (max-width: 991.98px)
+            padding-bottom: 40px
+        @media (max-width: 767.98px)
+            font-size: 13px
+    .row
+        box-shadow: 0px 5px 7px 7px rgba(0, 0, 0, 0.07)
+        @media (max-width: 991.98px)
+            margin: 0
+        &:last-child
+            margin-top: 115px
+            flex-direction: row-reverse
+            @media (max-width: 991.98px)
+                flex-direction: row
+    .Module
+        .ModuleContent
+            .row
+                &:nth-child(2)
+                    margin-top: 115px
+                    flex-direction: row-reverse
+                    @media (max-width: 991.98px)
+                        flex-direction: row
+    .col-lg-8
+        padding: 0
+        .boximg
+            height: 465px
+            @media (max-width: 991.98px)
+                height: 350px
+            @media (max-width: 767.98px)
+                height: 300px
+            @media (max-width: 575.98px)
+                height: 250px
+            img
+                height: 100%
+                width: 100%
+                object-fit: cover
+    .col-lg-4
+        background-image: url("/Data/Sites/1/media/khachsan/bg-text.png")
+        background-repeat: no-repeat
+        background-position: center center
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        background: #ffffff
+        @media (max-width: 991.98px)
+            padding-top: 30px
+            padding-bottom: 30px
+        .briefcontent
+            h3
+                font-size: 20px
+                color: rgb(51, 51, 51)
+                text-align: center
+                padding-bottom: 25px
+                text-transform: uppercase
+                @media (max-width: 767.98px)
+                    font-size: 18px
+                    padding-bottom: 15px
+            p
+                text-align: center
+                font-size: 15px
+                margin-right: 5%
+                margin-left: 5%
+                color: rgb(51, 51, 51)
+                @media (max-width: 767.98px)
+                    font-size: 13px
+                    padding-bottom: 20px
+.view-more
+    a
+        display: flex
+        justify-content: center
+        align-items: center
+        outline: none
+        text-decoration: none
+        cursor: pointer
+        overflow: hidden
+        padding-left: 35px
+        padding-right: 35px
+        padding-top: 5px
+        padding-bottom: 5px
+        border: 2px solid rgb(41, 144, 20)
+        border-radius: 20px
+        transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1)
+        span
+            font-size: 16px
+            color: rgb(26, 120, 5)
+            text-transform: uppercase
+            @media (max-width: 575.98px)
+                font-size: 13px
+        &:hover
+            animation: rotate 0.7s ease-in-out both
+            span
+                animation: storm 0.7s ease-in-out both
+                animation-delay: 0.06s

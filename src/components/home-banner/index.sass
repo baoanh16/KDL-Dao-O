@@ -1,0 +1,293 @@
+.home-wrapper-banner
+	position: relative
+.home-banner
+	.swiper-slide
+		position: relative
+		.container
+			z-index: 2
+			height: 700px
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			@media (max-width: 1199.98px)
+				height: 500px
+			@media (max-width: 1024px)
+				height: 400px
+			@media (max-width: 767.98px)
+				height: 300px
+			@media (max-width: 575.98px)
+				height: 250px
+			figcaption
+				margin-top: 40%
+				border-radius: 5px
+				background-image: linear-gradient( -180deg, rgba(14,124,149, .8) 0%, rgba(46,151,141, .8) 100%)
+				width: 30%
+				h3
+					padding-top: 10px
+					padding-bottom: 10px
+					padding-left: 10px
+					margin-right: 20px
+					font-size: 20px
+					color: #ffffff
+					font-weight: 400
+				@media (max-width: 1199.98px)
+					h3
+						font-size: 18px
+				@media (max-width: 1024px)
+					width: 40%
+					margin-top: 35%
+					h3
+						font-size: 16px
+				@media (max-width: 991.98px)
+					margin-top: 45%
+				@media (max-width: 767.98px)
+					margin-top: 40%
+					width: 50%
+				@media (max-width: 575.98px)
+					h3
+						font-size: 12px
+	figure
+		.boximg
+			height: 700px
+			@media (max-width: 1199.98px)
+				height: 500px
+			@media (max-width: 991.98px)
+				height: 400px
+			@media (max-width: 767.98px)
+				height: 300x
+			@media (max-width: 575.98px)
+				height: 250px
+			img
+				height: 100%
+				width: 100%
+				object-fit: cover
+	
+
+	.swiper-pagination
+		bottom: 130px
+		// width: 100%
+		.swiper-pagination-bullet
+			height: 3px
+			width: 40px
+			background-color: rgb(225, 225, 225)
+			border-radius: 0
+			opacity: 1
+			// margin-right: 10px
+			// &:last-child
+			//     margin-right: 0
+		.swiper-pagination-bullet-active
+			background-color: #3bbc25
+		@media (max-width: 991.98px)
+			bottom: 50px
+		@media (max-width: 767.98px)
+			bottom: 16px
+		@media (max-width: 575.98px)
+			bottom: 16px
+			.swiper-pagination-bullet
+				width: 25px
+
+.home-datphong
+	position: absolute
+	bottom: 20px
+	left: 50%
+	transform: translateX(-50%)
+	z-index: 2
+	width: 100%
+	@media (max-width: 991.98px)
+		position: static
+		transform: none
+		background-image: url("/Data/Sites/1/media/banner/bg-3.jpg")
+		padding-bottom: 20px
+		.form-datphong
+			padding: 15px 15px
+			margin-top: 20px
+			flex-direction: column
+			h2
+				width: 100%
+				text-align: center
+				display: flex
+				justify-content: center
+				margin-bottom: 20px
+			.wrap-form
+				display: -webkit-box
+				display: flex
+				flex-wrap: wrap
+				.select-main
+					display: flex
+					flex: 0 0 100%
+					justify-content: center
+				.frm-btn
+					display: flex
+					justify-content: center
+					align-items: center
+				.form-group
+					flex: 0 0 100%
+					max-width: 100%
+					flex-direction: column
+					display: flex
+					margin-bottom: 20px
+					.RadPicker
+						width: 100%
+					label
+						margin: 0
+						margin-bottom: 15px
+					input[type="text"]
+						width: 100%
+						margin: 0
+					&:nth-child(2)
+	@media (max-width:576.98px)
+		.form-datphong
+			.wrap-form
+				.select-main
+					align-items: flex-start
+					flex-flow: column
+					width: 100%
+				.form-group
+					width: 100%
+					.RadPicker
+						width: 100% !important
+
+.form-datphong
+	border-radius: 5px
+	width: 100%
+	display: flex
+	justify-content: center
+	background-color: rgba(0, 0, 0, 0.302)
+	padding: 15px 35px
+	h2
+		font-size: 24px
+		color: rgba(255, 255, 255, 0.8)
+		font-weight: 500
+		text-transform: uppercase
+		display: flex
+		align-items: center
+		@media (max-width: 1199.98px)
+			font-size: 20px
+		@media (max-width: 1024px)
+			font-size: 15px
+	.wrap-form
+		display: -webkit-box
+		@media (max-width: 991.98px)
+			justify-content: center
+		.form-group
+			display: flex
+			flex-direction: column
+			label
+				font-size: 14px
+				color: rgb(255, 255, 255)
+				margin-bottom: 5px
+				display: inline-block
+				margin-left: 20px
+				@media (max-width: 1024px)
+					font-size: 10px
+					margin-left: 10px
+			input[type="text"]
+				height: 35px
+				width: 180px
+				border-radius: 5px
+				border: none
+				background-color: rgba(255, 255, 255, 0.302)
+				padding-left: 20px
+				padding-right: 10px
+				display: inline-block
+				color: #fff
+				margin-left: 20px
+				outline: none
+				@media (max-width: 1239.98px)
+					width: 175px
+				@media (max-width: 1199.98px)
+					width: 145px
+				@media (max-width: 1024px)
+					width: 150px
+					margin-left: 10px
+					padding-left: 10px
+				
+				
+					
+	.select-detail
+		h4
+			font-size: 14px
+			color: rgb(255, 255, 255)
+			margin-bottom: 5px
+			margin-left: 20px
+			font-weight: 400
+			@media (max-width: 1024px)
+				font-size: 10px
+		select
+			width: 110px
+			height: 35px
+			margin-left: 20px
+			background-color: rgba(255, 255, 255, 0.302)
+			color: #fff
+			border-radius: 5px
+			border: none
+			outline: none
+			padding-left: 15px
+			@media (max-width: 1199.98px)
+				width: 80px
+				margin-left: 10px
+			option
+				color: #000
+				outline: none
+			@media (max-width: 1024px)
+				width: 80px
+				margin-left: 10px
+	
+	.select-main
+		display: flex
+		@media (max-width: 991.98px)
+			.select-detail
+				flex: 0 0 33.3333%
+				max-width: 33.3333%
+				display: flex
+				flex-direction: column
+				select
+					width: 96%
+					@media (max-width: 575.98px)
+						width: 100%
+				&:first-child
+					select
+						margin-left: 0
+					h4
+						margin-left: 0
+				
+				&:nth-child(2)
+					select
+						margin-left: auto
+						margin-right: auto
+					h4
+						margin-left: 5px
+				&:nth-child(3)
+					select
+						margin-left: auto
+					h4
+						margin-left: 10px
+					
+	.btn-submit
+		display: flex
+		justify-content: center
+		align-items: flex-end
+		margin-left: 20px
+		@media (max-width: 1024px)
+			margin-left: 10px
+		@media (max-width: 991.98px)
+			margin-top: 20px
+		a
+			width: 180px
+			display: flex
+			height: 35px
+			justify-content: center
+			align-items: center
+			border: 2px solid rgb(102, 220, 213)
+			border-radius: 25px
+			color: rgb(102, 220, 213)
+			text-transform: uppercase
+			font-size: 16px
+			@media (max-width: 1239.98px)
+				width: 170px
+			@media (max-width: 1199.98px)
+				width: 145px
+			@media (max-width: 1024px)
+				width: 150px
+				font-size: 13px

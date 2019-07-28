@@ -1,0 +1,199 @@
+footer
+	background: #4267b2
+	.container
+		position: relative
+	.footer-top
+		background-image: url("/Data/Sites/1/media/bg-footer.jpg")
+		padding-top: 60px
+		padding-bottom: 100px
+		background-position: top center
+		background-size: cover
+		background-repeat: no-repeat
+		.back-to-top
+			cursor: pointer
+			border: 2px solid #9f9d9e
+			position: fixed
+			right: 15%
+			height: 40px
+			display: flex
+			justify-content: center
+			align-items: center
+			bottom: 25%
+			padding: 8px
+			z-index: 11
+			em
+				color: #9f9d9e
+				font-size: 25px
+			@media screen and(max-width:1600px)
+				right: 50px
+			@media screen and(max-width:1400px)
+				right: 30px
+			@media screen and(max-width:1025px)
+				height: 30px
+				em
+					font-size: 15px
+		.phone-talk-fixed
+			cursor: pointer
+			position: fixed
+			right: 10%
+			height: 64px
+			width: 64px
+			border-radius: 50%
+			background: #3BBD25
+			display: flex
+			justify-content: center
+			align-items: center
+			bottom: 15%
+			padding: 8px
+			z-index: 11
+			transition: height .25s ease, width .25s ease
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0 
+				left: 0
+				border-radius: 50%
+				border: 10px solid rgba(#3BBD25,.3)
+				animation: ripple 1s linear infinite
+			a
+				display: flex
+				justify-content: center
+				align-items: center
+				height: 100%
+				z-index: 12
+			em
+				color: #ffffff
+				font-size: 40px
+			@media screen and(max-width:1600px)
+				right: 20px
+				bottom: 10%
+			@media screen and(max-width:1600px)
+				right: 10px
+			@media screen and(max-width:1025px)
+				width: 50px
+				height: 50px
+				em
+					font-size: 30px
+
+
+		.container
+			h2
+				margin-top: 20px
+				font-size: 16px
+				color: rgba(102, 220, 213,.8)
+				font-weight: bold
+				margin-bottom: 25px
+				@media (max-width: 1199.98px)
+					font-size: 14px
+			.address
+				a
+					display: flex
+					span
+						display: inline-block
+						font-size: 15px
+						color: rgba(255,255,255,.8)
+						font-weight: 300
+					.mdi
+						padding-right: 10px
+			.social-icons
+				margin-top: 25px
+				a
+					display: inline-flex
+					justify-content: center
+					align-items: center
+					height: 40px
+					width: 40px
+					color: #ffffff
+					border: 1px solid #ffffff
+					border-radius: 50%
+					font-size: 20px
+					margin-left: 15px
+					&:first-child
+						margin-left: 0
+					&:hover
+						cursor: pointer
+						&:first-child
+							background: #4267b2
+							border-color: #4267b2
+							+box-shadow
+						&:nth-child(2)
+							background-size: cover
+							background-repeat: no-repeat
+							border: none
+							background-image: url("/Data/Sites/1/media/instagram-bg.jpg")
+						&:last-child
+							background: rgb(217, 46, 46)
+							border-color: rgb(217, 46, 46)
+							+box-shadow
+			nav
+				a
+					font-size: 15px
+					color: #ffffff
+					display: block
+					margin-bottom: 5px
+					font-weight: 300
+	.footer-bottom
+		display: flex
+		background: #ffffff
+		.container
+			.copyright
+				padding: 10px 0
+				display: inline-flex
+				align-items: center
+				p
+					font-size: 12px
+					color: rgb(102, 102, 102)
+					font-weight: 500
+				@media (max-width: 767.98px)
+					order: 1
+					margin-top: 10px
+					width: 100%
+					p
+						width: 100%
+						text-align: center
+			nav
+				padding: 10px 0
+				display: inline-block
+				margin-left: auto
+				a
+					font-size: 14px
+					color: rgb(102, 102, 102)
+					font-weight: 500
+					line-height: 1
+					&:first-child
+						border-right: 1px solid rgb(102, 102, 102)
+						margin-right: 5px
+						padding-right: 5px
+				@media (max-width: 767.98px)
+					
+					order: -1
+					margin-left: 0
+					text-align: center
+					width: 100%
+@-webkit-keyframes ripple
+	0%
+		-webkit-transform: scale(1)
+
+	75%
+		-webkit-transform: scale(1.25)
+		opacity: 1
+
+	100%
+		-webkit-transform: scale(1.5)
+		opacity: 0.2
+
+
+@keyframes ripple
+	0%
+		transform: scale(1)
+
+	75%
+		transform: scale(1.25)
+		opacity: 1
+
+	100%
+		transform: scale(1.5)
+		opacity: 0.2

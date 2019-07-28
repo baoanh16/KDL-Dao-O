@@ -1,0 +1,45 @@
+header.header
+	div.header-info
+		.container
+			.desktop-header-1
+				a.phone(href="tel:0988606006")
+					span.mdi.mdi-phone
+					span +84 0988 606 006 
+				a.mail(href="maito:daoodongtruongcti@gmail.com")
+					span.mdi.mdi-email
+					span daoodongtruongcti@gmail.com
+				.searchbox
+					input(type="text", placeholder="Tìm kiếm thông tin")
+					button.searchicon
+						em.mdi.mdi-magnify
+				.language
+					a.lazyload.blur-up(href="")
+						img(src="./img/vn.png", alt="")
+					a.lazyload.blur-up(href="")
+						img(src="./img/en.png", alt="")
+	div.header-nav
+		.container
+			.desktop-header-2
+				.logo
+					a(href="/")
+						img(src='./img/logo.png').lazyload.blur-up
+					.sub-logo
+						img(src="./img/bottom-header.png", alt="")
+				nav
+					a(href="").active Nhà hàng
+					a(href="") Khách sạn
+					a(href="") Giải trí
+					a(href="") Hội nghị
+					a(href="") Khuyến mãi
+					a(href="") Đặt phòng
+				
+					//- .btn-header
+					//-     em.mdi.mdi-menu
+	.backdrop
+	.container
+		.mobile-header
+			.mobile-tab
+			.toggle-menu
+				span
+				span
+				span

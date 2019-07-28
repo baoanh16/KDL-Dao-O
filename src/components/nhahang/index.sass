@@ -1,0 +1,137 @@
+.nhahang
+	background-image: url("/Data/Sites/1/media/banner/bg-3.png")
+	background-position: center
+	background-repeat: no-repeat
+	padding-bottom: 165px
+	@media (max-width: 767.98px)
+		padding-bottom: 80px
+	h2.main-title
+		padding-bottom: 160px
+	.briefcontent
+		p
+			font-size: 16px
+			color: rgb(51, 51, 51)
+	.attributes
+		.boxicon
+			text-align: center
+			margin-top: 30px
+		.caption
+			margin-top: 10px
+			text-align: center
+			font-size: 10px
+			color: rgb(51, 51, 51)
+			text-transform: uppercase
+
+.slider-image
+	background-image: url("/Data/Sites/1/media/banner/bg-3.jpg")
+	padding-bottom: 115px
+	.swiper-container
+		.swiper-slide
+			&:not(.swiper-slide-active)
+				position: relative
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					left: 0
+					bottom: 0
+					width: 100%
+					height: 100%
+					z-index: 0
+					background: rgba(#000,0.5)
+	@media (max-width: 767.98px)
+		padding-bottom: 40px
+	h2.main-title
+		color: #ffffff
+	.btn-left
+		background-image: url("/Data/Sites/1/media/image/nav-slide-prev.jpg")
+		width: 100%
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+	.nav-prev
+		outline: none
+		display: inline-block
+		background-image: url("/Data/Sites/1/media/image/nav-prev.png")
+		height: 30px
+		width: 30px
+		background-repeat: no-repeat
+		background-position: center
+		@media (max-width: 767.98px)
+			display: none
+	.btn-right
+		background-image: url("/Data/Sites/1/media/image/nav-slide-next.jpg")
+		width: 100%
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+	.nav-next
+		outline: none
+		display: inline-block
+		background-image: url("/Data/Sites/1/media/image/nav-next.png")
+		height: 30px
+		width: 30px
+		background-repeat: no-repeat
+		background-position: center
+		@media (max-width: 767.98px)
+			display: none
+	.mobile-nav
+		display: none
+		@media (max-width: 767.98px)
+			display: inline-block
+			width: 100%
+			text-align: center
+			margin-top: 30px
+			.nav-next
+				display: inline-block
+				margin-left: 20px
+			.nav-prev
+				display: inline-block
+	.boximg
+		height: 450px
+		@media (max-width: 1024px)
+			height: 375px
+		@media (max-width: 767.98px)
+			height: 300px
+		@media (max-width: 575.98px)
+			height: 225px
+		img
+			height: 100%
+			width: 100%
+			object-fit: cover
+.menu-foods
+	h2.main-title
+		padding-bottom: 35px
+	.meal
+		margin-bottom: 40px
+		height: 320px
+		.menu-name-detail
+			text-align: center
+			padding: 8px 
+			font-weight: 600
+			color: #333333
+		@media (max-width: 1199.98px)
+			height: 280px
+		@media (max-width: 767.98px)
+			height: 225px
+		@media (max-width: 575.98px)
+			height: 250px
+		&:hover
+			img
+				filter: brightness(1)
+				+tran(.5s)
+		img
+			height: 100%
+			width: 100%
+			object-fit: cover
+			filter: brightness(.7)
+			+tran(.5s)
+//List atrribute css
+.Module-192
+	.attributes
+		.row
+			display: flex
+			justify-content: space-between
+			align-items: center

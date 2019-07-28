@@ -1,0 +1,33 @@
+.pages
+    ul
+        display: flex
+        list-style-type: none
+        justify-content: center
+        li
+            height: 30px
+            width: 30px
+            border: 1px solid #299593
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-left: 15px
+            &:first-child
+                margin-left: 0
+            span
+                font-weight: 500
+                color: #999999
+            &:hover, &.active
+                background: #299593
+                a
+                    color: #ffffff
+                span
+                    color: #ffffff
+                    display: inline-block
+            a
+                height: 100%
+                width: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                font-weight: 500
+                color: #999999

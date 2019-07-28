@@ -1,0 +1,360 @@
+.Module-232
+	.row
+		margin-bottom: 16px
+	.rcTable
+		tbody
+			tr
+				display: flex
+				position: relative
+				td
+					&:not(.rcInputCell)
+						position: absolute
+						top: 8px
+						right: 5px
+	.form-group
+		width: 100%
+		flex: 0 0 100%
+		display: flex
+		justify-content: flex-start
+		align-items: flex-start
+		flex-flow: column
+		h3
+			width: 100%
+			color: rgb(26, 120, 5)
+			font-size: 16px
+			text-transform: uppercase
+			@media (max-width: 1024px)
+				margin-top: 30px
+		.RadPicker
+			width: 100% !important
+		select
+			width: 100% !important
+			height: 45px
+			border: 1px solid rgb(231, 231, 231)
+			background: rgb(249, 249, 249)
+			border-radius: 5px
+			padding-left: 20px
+			padding-right: 20px
+			@media (max-width: 1199.98px)
+				width: 125px
+			@media (max-width: 1024px)
+				width: 125px
+			@media (max-width: 991.98px)
+				width: 97%
+
+			@media (max-width: 767.98px)
+				width: 127px
+			&:focus
+				border-color: rgb(26, 120, 5)
+				outline: none
+		input
+			width: 100%
+		label
+			font-size: 16px
+			color: rgb(102, 102, 102)
+			font-weight: 500
+			margin-bottom: 5px
+			margin-top: 15px
+		input[type="text"], textarea
+							width: 345px
+							height: 45px
+							border: 1px solid rgb(231, 231, 231)
+							background: rgb(249, 249, 249)
+							border-radius: 5px
+							padding-left: 20px
+							padding-right: 20px
+							@media (max-width: 1199.98px)
+								width: 267px
+							@media (max-width: 1024px)
+								width: 260px
+							@media (max-width: 991.98px)
+								width: 100%
+							@media (max-width: 767.98px)
+								width: 100%
+		textarea
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			box-sizing: border-box	
+			width: 100%
+	.frm-btnwrap
+		justify-content: flex-end
+		.frm-btn
+			.frm-btn-submit
+				background: #ffffff
+				display: inline-block
+				margin-left: auto
+				padding: 10px 20px
+				text-transform: uppercase
+				font-weight: 500
+				border: 2px solid rgb(41, 144, 20)
+				border-radius: 25px
+				color: rgb(41, 144, 20)
+				font-size: 16px
+				margin-top: 30px
+				@media (max-width: 1199.98px)
+					font-size: 14px
+				@media (max-width: 767.98px)
+					font-size: 12px
+					margin-left: 0
+					margin-top: 30px
+			.frm-btn-reset
+				display: none
+.datphong
+	.row
+		margin-bottom: 16px
+	.container
+		.row.main-content
+			padding-top: 60px
+			padding-bottom: 40px
+			background-image: url("/Data/Sites/1/media/datphong/bg.png")
+			box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.07)
+			border-radius: 5px
+			background-position-y: bottom
+			background-repeat: no-repeat
+			padding-left: 60px
+			padding-right: 60px
+			background-size: contain
+			@media (max-width: 1199.98px)
+				padding-left: 50px
+				padding-right: 50px
+			@media (max-width: 767.98px)
+				padding-left: 20px
+				padding-right: 20px
+		.col-lg-4
+			.contact
+				p
+					font-size: 16px
+				.phone, .mdi-mail
+					&:before
+						color: #1a7805
+						border: 1px solid #1a7805
+				.phone
+					margin-bottom: 30px
+					padding-top: 30px
+					width: 100%
+					display: flex
+					align-items: center
+					&:before
+						font-family: "Material Design Icons"
+						height: 50px
+						width: 50px
+						border-radius: 50%
+						display: inline-flex
+						justify-content: center
+						align-items: center
+						font-size: 25px
+						content: "\f3fd"
+					span
+						margin-left: 15px
+					p
+						display: inline-flex
+						flex-direction: column
+						margin-left: 15px
+						margin-bottom: 0
+						a
+							font-size: 18px
+							color: rgb(102, 102, 102)
+							font-weight: 500
+							display: inline-block
+							@media (max-width: 1199.98px)
+								font-size: 16px
+				.mail
+					display: flex
+					align-items: center
+					span
+						margin-left: 15px
+						font-size: 16px
+						color: rgb(102, 102, 102)
+						font-weight: 500
+						@media (max-width: 1199.98px)
+							font-size: 14px
+				span.mdi-mail
+					display: flex
+					justify-content: flex-start
+					align-items: center
+					margin: 0
+					&:before
+						font-family: "Material Design Icons"
+						height: 50px
+						width: 50px
+						border-radius: 50%
+						display: inline-flex
+						justify-content: center
+						align-items: center
+						font-size: 25px
+						content: "\f1ee"
+				
+				@media (max-width: 1199.98px)
+					.phone, span.mdi-mail
+						&:before
+							height: 40px
+							width: 40px
+		.col-lg-8
+			.row
+				h3
+					width: 100%
+					color: rgb(26, 120, 5)
+					font-size: 16px
+					text-transform: uppercase
+					@media (max-width: 1024px)
+						margin-top: 30px
+				&:nth-child(2)
+					h3
+						margin-top: 40px
+						@media (max-width: 1024px)
+							margin-top: 30px
+				.wrap-form
+					width: 100%
+					position: relative
+					div
+						display: -webkit-box
+						display: flex
+						flex-wrap: wrap
+						.form-group
+							display: flex
+							flex-direction: column
+							@media (max-width: 991.98px)
+								flex: 0 0 49%
+								max-width: 49%
+							@media (max-width: 767.98px)
+								width: 100%
+							@media (max-width: 575.98px)
+								flex: 0 0 100%
+								max-width: 100%
+							label
+								font-size: 16px
+								color: rgb(102, 102, 102)
+								font-weight: 500
+								margin-bottom: 5px
+								margin-top: 15px
+							input[type="text"], textarea
+								width: 345px
+								height: 45px
+								border: 1px solid rgb(231, 231, 231)
+								background: rgb(249, 249, 249)
+								border-radius: 5px
+								padding-left: 20px
+								padding-right: 20px
+								@media (max-width: 1199.98px)
+									width: 267px
+								@media (max-width: 1024px)
+									width: 260px
+								@media (max-width: 991.98px)
+									width: 100%
+								@media (max-width: 767.98px)
+									width: 100%
+							
+								&:focus
+									border-color: rgb(26, 120, 5)
+									outline: none
+							&:nth-child(2), &:nth-child(4)
+								margin-left: auto
+					.frm-btnwrap
+						justify-content: flex-end
+						.frm-btn
+							.frm-btn-submit
+								background: #ffffff
+								display: inline-block
+								margin-left: auto
+								padding: 10px 20px
+								text-transform: uppercase
+								font-weight: 500
+								border: 2px solid rgb(41, 144, 20)
+								border-radius: 25px
+								color: rgb(41, 144, 20)
+								font-size: 16px
+								margin-top: 30px
+								@media (max-width: 1199.98px)
+									font-size: 14px
+								@media (max-width: 767.98px)
+									font-size: 12px
+									margin-left: 0
+									margin-top: 30px
+							.frm-btn-reset
+								display: none
+				.select-main
+					display: flex
+					flex-direction: row
+					width: 100%
+					@media (max-width: 575.98px)
+						flex-direction: column
+					.select-detail
+						margin-left: auto
+						@media (max-width: 991.98px)
+							display: flex
+							flex-direction: column
+							flex: 0 0 24%
+							max-width: 24%
+							margin-left: 15px
+							&:first-child
+								flex: 0 0 49%
+								max-width: 49%
+								margin-left: 0
+						@media (max-width: 767.98px)
+							margin-left: auto
+							display: flex
+							flex: 0 0 32%
+							max-width: 32%
+							&:first-child
+								margin-left: 0
+								display: flex
+								flex: 0 0 32%
+								max-width: 32%
+						@media (max-width: 575.98px)
+							
+							max-width: 100%
+							margin-left: 0
+							&:first-child
+								
+								max-width: 100%
+								margin-left: 0
+						h4
+							margin-top: 15px
+							font-size: 16px
+							color: rgb(102, 102, 102)
+							font-weight: 500
+							margin-bottom: 5px
+						select
+							width: 165px
+							height: 45px
+							border: 1px solid rgb(231, 231, 231)
+							background: rgb(249, 249, 249)
+							border-radius: 5px
+							padding-left: 20px
+							padding-right: 20px
+							@media (max-width: 1199.98px)
+								width: 125px
+							@media (max-width: 1024px)
+								width: 125px
+							@media (max-width: 991.98px)
+								width: 97%
+
+							@media (max-width: 767.98px)
+								width: 127px
+							&:focus
+								border-color: rgb(26, 120, 5)
+								outline: none
+						&:first-child
+							margin-left: 0
+							select
+								width: 345px
+								@media (max-width: 1199.98px)
+									width: 267px
+								@media (max-width: 1024px)
+									width: 260px
+								@media (max-width: 991.98px)
+									width: 100%
+						@media (max-width: 767.98px)
+							select
+								width: 100%
+							&:first-child
+								select
+									width: 100%
+				.submit-captcha
+					width: 100%
+					display: flex
+					align-items: center
+					@media (max-width: 767.98px)
+						flex-direction: column
+					.boximg
+						display: inline-block
