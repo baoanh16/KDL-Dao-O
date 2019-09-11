@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
 	<xsl:output method="html" indent="yes" />
-	
+
 	<xsl:template match="/">
 		<div class="khachsan-detail section-kdldaoo">
 			<div class="container">
@@ -26,7 +26,7 @@
 							<div class="swiper-button-next swiper-button-white"></div>
 							<div class="swiper-button-prev swiper-button-white"></div>
 						</div>
-						
+
 					</div>
 					<div class="col-lg-4">
 						<div class="content">
@@ -56,7 +56,7 @@
 			<div class="room-type section-kdldaoo" style="padding-bottom: 0;">
 				<div class="container">
 					<h2>Loại phòng</h2>
-					
+
 					<div class="row">
 						<div class="swiper-container">
 							<div class="swiper-wrapper">
@@ -68,6 +68,7 @@
 			</div>
 		</xsl:if>
 		<div class="khachsan-info section-kdldaoo">
+			<xsl:apply-templates select="/ProductDetail/ProductImages" mode="SideImage"></xsl:apply-templates>
 			<div class="container">
 				<h2>Thông tin</h2>
 				<div class="row">
@@ -85,7 +86,7 @@
 				<h2>Tiện ích</h2>
 				<div class="row">
 					<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
-					
+
 					<xsl:apply-templates select="/ProductDetail/ProductAttributes" mode="Icon"></xsl:apply-templates>
 				</div>
 			</div>
@@ -95,7 +96,7 @@
 				<h2>Ghi chú</h2>
 				<div class="row">
 					<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
-					
+
 					<xsl:apply-templates select="/ProductDetail/ProductAttributes" mode="Note"></xsl:apply-templates>
 				</div>
 			</div>
@@ -124,7 +125,16 @@
 				</div>
 				<figcaption>
 					<h3>
-						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+						<a>
+							<xsl:attribute name="href">
+								<xsl:value-of select="Url"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+						</a>
+
 					</h3>
 					<div class="caption">
 						<div class="person">
@@ -136,7 +146,7 @@
 							<xsl:text disable-output-escaping="yes">Giá: </xsl:text>
 							<xsl:value-of select="Price"></xsl:value-of>
 							<xsl:text>/đêm</xsl:text>
-							
+
 						</div>
 					</div>
 				</figcaption>
@@ -147,10 +157,10 @@
 		<xsl:if test="position() = 1">
 			<xsl:value-of select="Content" disable-output-escaping="yes"></xsl:value-of>
 		</xsl:if>
-		
+
 	</xsl:template>
 	<xsl:template match="ProductAttributes" mode="Icon">
-		
+
 		<xsl:if test="position() = 2">
 			<xsl:value-of select="Content" disable-output-escaping="yes"></xsl:value-of>
 		</xsl:if>
@@ -161,7 +171,7 @@
 		</xsl:if>
 	</xsl:template>
 	<xsl:template match="ProductImages" mode="Big">
-		
+
 		<div class="swiper-slide">
 			<div class="banner">
 				<img>
@@ -174,9 +184,9 @@
 				</img>
 			</div>
 		</div>
-		
+
 	</xsl:template>
-	
+
 	<xsl:template match="ProductImages" mode="Small">
 		<div class="swiper-slide">
 			<div class="banner">
@@ -190,5 +200,21 @@
 				</img>
 			</div>
 		</div>
+	</xsl:template>
+	<xsl:template match="ProductImages" mode="SideImage">
+		<xsl:if test="position() =1">
+
+			<xsl:attribute name="style">
+				<xsl:text disable-output-escaping="yes">
+					background-image: url(
+				</xsl:text>
+				<xsl:value-of select="ThumbnailUrl"></xsl:value-of>
+				<xsl:text disable-output-escaping="yes">
+					);background-repeat: no-repeat;background-size:contain;background-position: right center;
+
+				</xsl:text>
+			</xsl:attribute>
+		</xsl:if>
+
 	</xsl:template>
 </xsl:stylesheet>

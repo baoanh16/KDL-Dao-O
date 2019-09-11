@@ -142,7 +142,7 @@
 							<div class="col-md-2 col-sm-4">
 								<div class="content">
 
-									<portal:modulewrapper id="mdl160" runat="server" configuremoduleid="160" />
+									<portal:modulewrapper id="mdl1269" runat="server" configuremoduleid="1269" />
 
 								</div>
 							</div>
@@ -170,7 +170,9 @@
 					<div class="container">
 						<div class="row">
 							<div class="copyright">
-								<p>© 2019 Khu du lịch Đảo Ó. All rights reserved. Desgined by Cánh Cam.</p>
+								<p>© 2019 Khu du lịch Đảo Ó. All rights reserved. Desgined by </p>
+								<a target="_blank" href="http://www.canhcam.vn"> &nbsp; Cánh Cam</a>
+								
 							</div>
 							<nav><a href="">Điều khoản sử dụng</a><a href="">Chính sách bảo mật</a></nav>
 						</div>

@@ -176,7 +176,7 @@ function roomTypeSlide() {
 		spaceBetween: 20,
 		breakpoints: {
 			992: {
-				slidesPerView: 2
+				slidesPerView: 3
 			},
 			576: {
 				slidesPerView: 1
@@ -213,6 +213,49 @@ function swiperInit() {
 		watchSlidesProgress: true
 	});
 	var galleryTop = new Swiper(".swiper-product-top .swiper-container", {
+		spaceBetween: 10,
+		effect: "fade",
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev"
+		},
+		fadeEffect: {
+			crossFade: true
+		},
+		thumbs: {
+			swiper: galleryThumbs
+		}
+	});
+	var galleryThumbs2 = new Swiper(
+		".swiper-product-thumbs-2 .swiper-container",
+		{
+			spaceBetween: 20,
+			freeMode: true,
+			spaceBetween: 20,
+			breakpointsInverse: true,
+			breakpoints: {
+				// when window width is >= 320px
+				300: {
+					slidesPerView: 2,
+					spaceBetween: 20
+				},
+				// when window width is >= 480px
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 20
+				},
+				// when window width is >= 640px
+				1200: {
+					slidesPerView: 4,
+					spaceBetween: 20
+				}
+			},
+
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true
+		}
+	);
+	var galleryTop2 = new Swiper(".swiper-product-top-2 .swiper-container", {
 		spaceBetween: 10,
 		effect: "fade",
 		navigation: {

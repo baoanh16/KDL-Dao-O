@@ -7,6 +7,7 @@
 	<xsl:template match="Zone">
 		<xsl:if test="position() = 1">
 			<div class="nhahang section-kdldaoo">
+				<xsl:apply-templates select="News" mode="Background"></xsl:apply-templates>
 				<div class="container">
 					<h2 class="main-title">
 						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
@@ -41,7 +42,7 @@
 				</div>
 			</div>
 		</xsl:if>
-		
+
 	</xsl:template>
 	<xsl:template match="News" mode="TopNews">
 		<xsl:if test="position()=1">
@@ -60,7 +61,7 @@
 	<xsl:template match="News" mode="Image">
 		<xsl:if test="position() =1">
 			<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
-			
+
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
 					<xsl:apply-templates select="NewsImages" mode="Slide"></xsl:apply-templates>
@@ -68,10 +69,10 @@
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-button-next"></div>
 			</div>
-			
+
 		</xsl:if>
-		
-		
+
+
 	</xsl:template>
 	<xsl:template match="NewsImages" mode="Slide">
 		<div class="swiper-slide">
@@ -87,11 +88,11 @@
 			</div>
 		</div>
 	</xsl:template>
-	
+
 	<xsl:template match="News" mode="Menu">
 		<div class="col-sm-6 col-lg-4">
 			<div class="meal">
-				
+
 				<xsl:apply-templates select="NewsImages" mode="MenuItem"></xsl:apply-templates>
 				<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 				<div class="menu-name-detail">
@@ -99,10 +100,10 @@
 				</div>
 			</div>
 		</div>
-		
+
 	</xsl:template>
 	<xsl:template match="NewsImages" mode="MenuItem">
-		
+
 		<a href="javascript:void(0)">
 			<img>
 				<xsl:attribute name="src">
@@ -112,7 +113,22 @@
 					<xsl:value-of select="Title"></xsl:value-of>
 				</xsl:attribute>
 			</img>
-			
+
 		</a>
+	</xsl:template>
+	<xsl:template match="News" mode="Background">
+		<xsl:apply-templates select="NewsImages" mode="BG"></xsl:apply-templates>
+	</xsl:template>
+	<xsl:template match="NewsImages" mode="BG">
+		<xsl:attribute name="style">
+			<xsl:text disable-output-escaping="yes">
+				background-image: url(
+			</xsl:text>
+			<xsl:value-of select="ImageUrl"></xsl:value-of>
+			<xsl:text disable-output-escaping="yes">
+				);background-repeat: no-repeat;background-size:contain;background-position: right center;
+
+			</xsl:text>
+		</xsl:attribute>
 	</xsl:template>
 </xsl:stylesheet>

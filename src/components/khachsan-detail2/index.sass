@@ -362,3 +362,48 @@
 			object-fit: contain
 		@media screen and(max-width:1025px)
 			position: static
+.khachsan-detail2
+	.swiper-product-thumbs
+		height: 100px
+		.swiper-slide
+			.banner
+				height: 100px
+				width: auto
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+			@media screen and(max-width:1025px)
+				.banner
+					height: 70px
+
+			&.swiper-slide-thumb-active
+				&:after
+					transition: .3s all ease-in-out
+					display: none
+			&:not(.swiper-slide-thumb-active)
+				position: relative
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					left: 0
+					bottom: 0
+					width: 100%
+					height: 100%
+					background: rgba(#000000,.2)
+	.swiper-product-top
+		margin-bottom: 20px
+		.banner
+			height: 450px
+			width: auto
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+		@media screen and(max-width:1025px)
+			.banner
+				height: 350px
+		@media screen and(max-width:768px)
+			.banner
+				height: 300px
